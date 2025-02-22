@@ -46,3 +46,9 @@ fs.unlink("mynewfile2.txt", function (err) {
   if (err) throw err;
   console.log("File deleted!");
 });
+
+// Rename file using rename()
+fs.rename("mynewfile1.txt", "myrenamefile.txt", function (err) {
+  if (err) throw err;
+  console.log("File Renamed!");
+});
